@@ -23,14 +23,18 @@ public class MyCalculatorServiceImplTest {
 	}
 	@Test
 	public void subtract_success() {
-		assertEquals(8, service.subract(16, 8));
+		assertEquals(8, service.subtract(16, 8));
 	}
 	@Test
 	public void subtract_zero() {
-		assertEquals(5,service.subract(5, 0));
+		assertEquals(5,service.subtract(5, 0));
 	}
 	@Test
 	public void subtract_failure() {
-		assertNotEquals(8, service.subract(7, 3));
+		assertNotEquals(8, service.subtract(7, 3));
+	}
+	@Test
+	public void multiply_success () {
+		assertEquals(6, service.multiply(new int[] {2,3}));
 	}
 }
